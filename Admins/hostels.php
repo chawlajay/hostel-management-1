@@ -50,9 +50,7 @@
 
 <!DOCTYPE HTML>
 <html>
-<script>
-var check=0;
-</script>
+
 	<?php include('templates/header.php'); ?>
 
 	<h4 class="center grey-text">Hostels</h4>
@@ -63,7 +61,7 @@ var check=0;
 	<?php foreach($hostels as $hostel){ ?>
 	<div class="col s6 md3">
 	  <div class="card z-depth-0">
-	  <img src="" class="pizza">
+	  
 	    <div class="card-content center">
 	    <h6>Hostel ID : <?php echo htmlspecialchars($hostel['hostel_id']); ?></h6>
 	    <h6>Hostel Name : <?php echo htmlspecialchars($hostel['hostel_name']); ?></h6>
@@ -118,25 +116,6 @@ var check=0;
 
 
 <?php include('templates/footer.php'); ?>
-  <script>
-		function myFunction() {
-		  var txt='';
-		  // if(check==0)
-		  // {
-		          var r = confirm("Are you sure to Remove manager ?");
-		          if (r == true) {
-		            txt = "Removed";
-		            check=1;
-		          } else {
-		            txt = "Remove Manager";
-		          }
-		          document.getElementById("demo").innerHTML = txt;
-		  // }
-		  // else
-		  // {
-		  //   location.href="appoint_manager.php";
-		  // }
-		}
-	</script>
+
 
 </html>
